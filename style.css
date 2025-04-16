@@ -38,7 +38,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
-  background: rgba(255, 232, 214, 0.8); /* Light Warm Beige with Transparency */
+  /* Light Warm Beige with Transparency */
   backdrop-filter: blur(10px);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -86,14 +86,6 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   transform: scale(1.05);
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #b7b7a4; /* Warm Gray */
-  color: #6b705c;
 }
 
 /* HAMBURGER MENU */
@@ -504,4 +496,136 @@ article .icon {
 
 .arrow-experience:hover {
   transform: scale(1.1);
+}
+
+/* PROJECTS SECTION */
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border: 2px solid #a5a58d;
+  background: rgba(255, 232, 214, 0.9); /* Warm Beige Background */
+  color: #6b705c; /* Deep Olive Text */
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 4px 4px 12px rgba(107, 112, 92, 0.2); /* Soft Shadow */
+  transition: all 0.3s ease-in-out;
+}
+
+.color-container:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 15px rgba(107, 112, 92, 0.4); /* Enhanced Shadow */
+  background: rgba(255, 232, 214, 1); /* Slightly Brighter */
+}
+
+.project-img {
+  border-radius: 1.5rem;
+  width: 90%;
+  height: auto;
+}
+
+.project-title {
+  margin: 1rem 0;
+  color: #6b705c;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.project-btn {
+  background: none;
+  color: #6b705c;
+  border: 2px solid #6b705c;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-btn:hover {
+  background: #6b705c;
+  color: white;
+  box-shadow: 4px 4px 12px rgba(107, 112, 92, 0.6);
+  border: white 2px solid;
+  transform: scale(1.05);
+}
+
+/* CONTACT SECTION */
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: 2px solid #a5a58d;
+  background: rgba(255, 232, 214, 0.9);
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+  box-shadow: 4px 4px 12px rgba(107, 112, 92, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-info-upper-container:hover {
+  transform: scale(1.03);
+  box-shadow: 6px 6px 15px rgba(107, 112, 92, 0.3);
+  background: rgba(255, 232, 214, 1);
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+  color: #6b705c;
+}
+
+.contact-info-container img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-info-container img:hover {
+  transform: scale(1.1);
+}
+
+.contact-info-container p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+.nav-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+
+  transition: all 0.3s ease-in-out;
+}
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
 }
